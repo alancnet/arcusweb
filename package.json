@@ -11,7 +11,7 @@
     "compile": "node bin/build",
     "develop": "node bin/server",
     "lint": "eslint src test --ext .js --ext .component",
-    "postinstall": "npm-run-all bundle-dev",
+    "x:postinstall": "npm-run-all bundle-dev",
     "start": "NODE_ENV=production node bin/server",
     "test": "npm-run-all lint test:unit",
     "test:bamboo": "npm run test:unit",
@@ -43,7 +43,6 @@
     ],
     "map": {
       "chai": "chai/chai",
-      "i2web-devtools": "i2web-devtools/build/i2web-devtools",
       "babel-polyfill": "babel-polyfill/dist/polyfill"
     },
     "meta": {
@@ -156,7 +155,6 @@
     "fs-extra": "^0.30.0",
     "funcunit": "^3.4.3",
     "generator-donejs": "^1.0.5",
-    "i2web-devtools": "git+ssh://git@bitbucket.org/eyeris/i2web-devtools.git",
     "infanticide": "^1.0.1",
     "lolex": "^1.5.1",
     "mocha": "^3.5.3",

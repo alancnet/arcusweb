@@ -26,9 +26,9 @@ export default Component.extend({
         // Wait for steal to finish loading before importing the devtools script
         // On live-reloads this will be resolved already but the page will be
         // re-rendered so we have to call the plugin again.
-        System.import('i2web-devtools').then(() => {
-          $('body').arcusDevTools();
-        });
+        // System.import('i2web-devtools').then(() => {
+        //   $('body').arcusDevTools();
+        // });
       });
     },
     /* eslint-enable promise/catch-or-return */
